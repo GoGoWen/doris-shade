@@ -20,7 +20,7 @@ under the License.
     <parent>
         <groupId>org.apache.doris</groupId>
         <artifactId>doris-shade</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>JD-1.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>hive-catalog-shade</artifactId>
@@ -449,7 +449,7 @@ under the License.
                                 </relocation>
                                 <relocation>
                                         <pattern>org.apache.httpcomponents</pattern>
-                                        <shadePattern>shade.doris.hive.org.apache.httpcomponents</shadePattern>
+                                        <shadedPattern>shade.doris.hive.org.apache.httpcomponents</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>

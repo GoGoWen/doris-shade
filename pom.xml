@@ -24,7 +24,7 @@ under the License.
     </parent>
     <groupId>org.apache.doris</groupId>
     <artifactId>doris-shade</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>JD-1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Archetype - doris-shade</name>
     <url>https://doris.apache.org</url>
@@ -35,6 +35,19 @@ under the License.
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>jd-snapshots</id>
+            <name>jd-snapshots</name>
+            <url>http://artifactory.jd.com/libs-snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>jd-release</id>
+            <name>jd-release</name>
+            <url>http://artifactory.jd.com/libs-releases/</url>
+        </repository>
+    </distributionManagement>
 
     <scm>
         <url>https://github.com/apache/doris-shade</url>
@@ -82,6 +95,18 @@ under the License.
                     </plugin>
                 </plugins>
             </build>
+            <!--<repositories>
+                <repository>
+                    <id>central</id>
+                    <name>central maven repo https</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>snapshots</id>
+                    <name>apache snapshots maven repo https</name>
+                    <url>http://artifactory.jd.com/libs-snapshots/</url>
+                </repository>
+            </repositories>-->
         </profile>
     </profiles>
 

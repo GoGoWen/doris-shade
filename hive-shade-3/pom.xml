@@ -315,6 +315,10 @@ under the License.
                                     <shadedPattern>shade.doris.org.apache.commons.io</shadedPattern>
                                 </relocation>
                                 <relocation>
+                                    <pattern>org.apache.avro</pattern>
+                                    <shadedPattern>shade.doris.org.apache.avro</shadedPattern>
+                                </relocation>
+                                <relocation>
                                     <pattern>com.google.common</pattern>
                                     <shadedPattern>shade.doris.hive.com.google.common</shadedPattern>
                                 </relocation>
